@@ -25,7 +25,7 @@ services:
       - mailhog
 
   db:
-    image: bitnami/mariadb:latest
+    image: soldevelo/mariadb:latest
     container_name: ECF-mariadb
     restart: unless-stopped
     ports:
@@ -39,7 +39,7 @@ services:
       - MARIADB_PASSWORD=${MARIADB_PASSWORD}
 
   mongodb:
-    image: bitnami/mongodb:latest
+    image: soldevelo/mongodb:latest
     container_name: ECF-mongodb
     restart: unless-stopped
     ports:
